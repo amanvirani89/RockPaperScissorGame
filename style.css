@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.game {
+  height: 100vh;
+  background-color: rgb(24, 63, 63);
+  color: rgb(236, 193, 193);
+  font-family: 'Courier New', Courier, monospace;
+}
+.playerGroup {
+  display: flex;
+  height: 20vh;
+  justify-content: space-around;
+  align-items: center;
+}
+.introView {
+  height: 20vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  transition: 0.5s ease-out;
+}
+.introView button,
+.startGame button {
+  width: 10em;
+  height: 3em;
+  color: rgb(236, 193, 193);
+  background-color: rgb(103, 20, 119);
+}
+.startGame {
+  position: absolute;
+  height: 20vh;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -130%);
+  text-align: center;
+  transition: 1.5s ease-in;
+}
+.gameImage {
+  display: flex;
+  justify-content: space-evenly;
+}
+.secondImg {
+  transform: rotateY(180deg);
+}
+.options {
+  width: 100vw;
+  display: flex;
+  justify-content: space-evenly;
+}
+.fadeOut {
+  opacity: 0;
+  pointer-events: none;
+}
+.fadeIn {
+  opacity: 1;
+  pointer-events: all;
+}
